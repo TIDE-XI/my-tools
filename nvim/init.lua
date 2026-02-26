@@ -1,3 +1,4 @@
+vim.env.VIMRUNTIME = '/usr/share/nvim/runtime'
 vim.g.lualine_theme = 'vscode'
 require("plugins.plugins-setup")
 require("core.options")
@@ -9,3 +10,4 @@ require("plugins.treesitter")
 require("plugins.comment")
 require('vscode').load('light')
 require("plugins.competitest")
+require("plugins.coc")

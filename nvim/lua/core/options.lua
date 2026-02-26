@@ -34,8 +34,7 @@ vim.keymap.set('i','<CR>',function()
   return line:sub(col-1,col-1)=='{' and line:sub(col,col)=='}' and '<CR><Esc>O' or '<CR>'
 end,{expr=true})
 --shell
-opt.shell = "powershell"
+opt.shell = "fish"
 opt.shellcmdflag = "-NoLogo -NoProfile -ExecutionPolicy RemoteSigned -Command"
 opt.shellquote = ""
 opt.shellxquote = ""
-
