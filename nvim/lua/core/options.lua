@@ -25,7 +25,7 @@ opt.smartcase=true
 --外观
 opt.termguicolors=true
 opt.signcolumn="yes"
-vim.cmd[[colorscheme vscode]]
+opt.background="light"
 --SUOJING
 vim.opt.cindent=true;vim.opt.shiftwidth=4;vim.opt.tabstop=4;vim.opt.expandtab=true
 vim.keymap.set('i','<CR>',function()
@@ -33,9 +33,3 @@ vim.keymap.set('i','<CR>',function()
   local line=vim.fn.getline('.')
   return line:sub(col-1,col-1)=='{' and line:sub(col,col)=='}' and '<CR><Esc>O' or '<CR>'
 end,{expr=true})
---shell
-opt.shell = "powershell"
-opt.shellcmdflag = "-NoLogo -NoProfile -ExecutionPolicy RemoteSigned -Command"
-opt.shellquote = ""
-opt.shellxquote = ""
-
